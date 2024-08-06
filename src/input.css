@@ -1,0 +1,67 @@
+.table {
+    /* width: 50%;  */
+    margin: 0 auto;
+    background-color: tomato;
+    text-align: left;
+    border-radius: 10px;
+   
+
+}
+
+.submit {
+    border-radius: 30px;
+    background-color: rgb(255, 170, 155);
+    margin: 0;
+    border-color: rgb(18, 4, 82);
+}
+
+.name {
+    border-radius: 30px;
+    opacity: 0.5;
+    color:rgb(243, 236, 236);
+}
+
+.numbers {
+    border-radius: 30px;
+    opacity: 0.5;
+    color:rgb(243, 236, 236);
+}
+
+.email {
+    border-radius: 30px;
+    opacity: 0.5;
+    color:rgb(243, 236, 236);
+
+}
+.name:hover {
+    background-color: rgb(7, 7, 7);
+  }
+  .numbers:hover {
+    background-color: rgb(7, 7, 7);
+  }
+  .email:hover {
+    background-color: rgb(7, 7, 7);
+  }
+  .submit:hover {
+    background-color: rgb(76, 212, 87);
+  }
+
+
+
+.styled-button {
+  background-color: #3498db; 
+  color: white; 
+  border: none;
+  font-size: 16px;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.styled-button:hover {
+  background-color: #182d3b; 
+}
+
+.styled-button:active {
+  transform: scale(0.95);
+}
