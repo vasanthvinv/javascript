@@ -1,0 +1,69 @@
+body{
+    background-color: rgb(77, 187, 230);
+    align-items: center;
+    
+}
+.todolist{
+    width: 550px;
+    background-color: aliceblue;
+     margin: auto;
+     margin-top: 200px;
+     justify-content: center;
+     align-items: center;
+}
+.new-task{
+   align-content: center;
+   text-align:center ;
+    
+}
+.heading{
+    text-align: center;
+}
+.item{
+    flex: auto;
+}
+.todo-content{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-items: center;
+    padding: 2px 100px;
+}
+.task-count{
+    display: flex;
+    justify-content: space-between;
+}
+.task-count button{
+    margin: 10px;
+    border: none;
+}
+.input{
+    justify-content: center;
+    text-align: center;
+    color:rgb(77, 187, 230) ;
+    border-color: rgb(159, 120, 14);
+}
+.btn-add{
+    background-color: rgb(77, 187, 230) ;
+}
+.check.input{
+    background-color: rgb(77, 187, 230) ;
+
+}
+/* .btnRmCheckbox{
+background-color: none;
+   height: 18px; 
+   border-radius: 20%;
+   margin-bottom: 1em;
+} */
+
+
+/* .spantag {
+    display: flex;
+    justify-content:right;
+    align-items: right;
+    color:  rgb(53, 188, 241) ;
+    justify-content: space-between;
+  } */
+  
+ 

@@ -1,0 +1,84 @@
+.tblfull{
+   
+    border-color: red;
+}
+.table{
+    width: 120px;
+    margin-left: center;
+
+}
+.input-form{
+    margin:30px;
+}
+.input-form1{
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: rgb(235, 237, 210);
+}
+.viewrm{
+margin-left: 45px;
+background: orange;
+}
+.view{
+    background: rgb(38, 175, 38);
+}
+.rmtable{
+    background-color: red;
+}
+.submit-btn{
+    background-color: rgb(241, 104, 104);
+    border-radius: 20px;
+
+} 
+.table{ 
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+
+
+ }
+ .tablecss{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 500px;
+ }
+ .tbl-head{
+   min-width: 80px;
+ }
+ .table1{
+    min-width: 70px;
+ }
+ .input-review{
+    background-color: rgb(226,223,137);
+    border: none;
+ }
+ .view-btn{
+    background-color: rgb(90, 130, 239);
+ }
+ .input-review:focus{
+outline: none;
+ }
+ .tablecss-review{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px;
+
+ }
+ .viewlalllist{
+ 
+ }
+ .viewdetail{
+    width: 500px;
+    border: 2px solid black;
+ }
+ .viewdetaillist{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    /* justify-items: left; */
+    /* text-align: left; */
+ }

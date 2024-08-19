@@ -1,0 +1,17 @@
+
+body{
+  background: rgb(226,223,137);
+}
+.tictoctoe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 330px; 
+    margin:  auto; 
+  }
+
+.btn-tick {
+  width: 100px;
+  height: 100px;
+  font-size: 16px;
+}
