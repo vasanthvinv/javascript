@@ -1,0 +1,1 @@
+  Selenium::WebDriver::Chrome.path = '/home/vasanth/.webdrivers/chromedriver'
