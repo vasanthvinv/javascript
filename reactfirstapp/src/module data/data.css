@@ -1,0 +1,15 @@
+table {
+    border-collapse: separate;
+    border-spacing: 10px; 
+  }
+  
+  td {
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    gap: 30px;
+  }
+  
+  .table {
+    background-color: #f9f9f9;
+  }
+  

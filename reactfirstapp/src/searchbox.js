@@ -1,19 +1,16 @@
-import React, { useState,useEffect, useMemo } from "react";
-
-const items = ["apple", "orange", "mango", "banana"];
+import React, { useState, useEffect } from "react";
+// import "./dropdown.css";
 
 const Dropdown = () => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
   const [filtered, setFiltered] = useState([]);
+  const items = ["apple", "orange", "mango", "banana"];
 
   useEffect(() => {
     setFiltered(
       items.filter((item) => item.toLowerCase().includes(search.toLowerCase()))
     );
   }, [search]);
-
-
-
 
   const handleChange = ({ target }) => {
     setSearch(target.value);
