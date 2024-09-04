@@ -1,10 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import _ from 'lodash';
 
+ interface DataItem {
+    id: string;
+    name: string;
+    gender: string;
+    Dob: string;
+    pets: string;
+    address: string;
+    password: string;
+    vehicle: string;
+    email: string;
+    
+  }
+   interface ErrorType {
+    name: string;
+    message: string;
+  }
 function Data() {
-  const [datas, setdata] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [datas, setdata] = useState<DataItem[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<ErrorType | null>(null);
 
   useEffect(() => {
     fetch('https://66cc14004290b1c4f19bd1fc.mockapi.io/data')
@@ -16,14 +32,14 @@ function Data() {
       .catch(errors => { setError(errors); setLoading(false) });
   }, []);
 
-  const handleRemove = (i) => {
+  const handleRemove = (i: number) => {
     setdata(_.without(datas, datas[i]))
   }
   if (loading) {
     return <p>loading ...</p>
   }
   if (error) {
-    return <p>Error:{error.name} </p>
+    return <p>Error:{error.name} - {error.message} </p>
   }
 
   return (

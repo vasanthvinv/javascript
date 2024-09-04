@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "./multidropdown.css";
 
 
-function MultiDropDownRecrusion({data}) {
-  const [openItems, setOpenItems] = useState ('');
+function MultiDropDownRecrusion({data}): React.JSX.Element {
+  const [openItems, setOpenItems] = useState<string | null> ('');
   const items = data.map((item) => item.label);  
-  const [selectedItems,setSelectedItems] = useState(items); 
+  const [selectedItems,setSelectedItems] = useState<string[]>(items); 
 
-  const handleOpen = (label) => {
+  const handleOpen = (label: string) => {
       setOpenItems(openItems === label ? null : label);
       setSelectedItems(openItems === label ? items : label);
   };

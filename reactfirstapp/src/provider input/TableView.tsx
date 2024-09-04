@@ -28,7 +28,6 @@ const TableView = () => {
               <input
                 type="text"
                 className='input-review'
-              
                 value={item.review}
                 onChange={(e) => handleReviewChange(index, e.target.value)}
               />

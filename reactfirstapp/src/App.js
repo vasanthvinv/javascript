@@ -9,7 +9,7 @@ import React from 'react';
 // import InputField from './formtable/formtable.jsx';
 // import InputField from './provider input/InputField.js'
 // import Button from './11.jsx';
-// import Vasanth from './naan.jsx';
+// import InputField from './nnnn.jsx';
 // import Alert from './alert/alert.jsx';
 // import Dropdown from './searchbar/searchbox.jsx'
 // import Multidrop from './multidropdown/multidrop.jsx';
@@ -17,13 +17,14 @@ import React from 'react';
 // import MultiDropDown1 from './multidropdown/multidropobject.jsx';
 // import MultiDropDownRecrusion from './multidropdown/recurisionmultidrop.jsx';
 // import RecrusionMultiDropDown from './multidropdown/recruiondrop.jsx';
-import Data from './module data/data';
-
+// import Data from './module data/data';
+import Main from './login/main';
+import Login from './login/login';
 
 function App() {
   return (
     <div>
-      {/* <Button disabled={true} type ="small" /> */}
+      {/* <Button disabled={true} type = {true}/> */}
       {/* <Input/> */}
       {/* <Accordion/> */}
       {/* <Dropdown/> */}
@@ -41,7 +42,9 @@ function App() {
     {/* <MultiDropDown1/> */}
     {/* <MultiDropDownRecrusion/> */}
     {/* <RecrusionMultiDropDown/> */}
-    <Data/>
+    {/* <Data/> */}
+    <Main/>
+    {/* <Login /> */}
       </div>
   );
 }
