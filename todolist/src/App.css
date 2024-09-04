@@ -1,0 +1,34 @@
+body{
+  background-color: skyblue;
+}
+
+h2{
+  display: flex;
+  justify-content:  center;
+  margin-top: 15px;
+}
+
+.inputs{
+  display: flex;
+  justify-content:  center;
+  margin-top: 15px;
+}
+
+.list{
+  display: flex;
+  justify-content:  center;
+  margin-top: 15px;
+  gap: 15px;
+
+}
+button{
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+
+
+}
+.list{
+  background-color: rgb(157, 28, 28);
+}
+
