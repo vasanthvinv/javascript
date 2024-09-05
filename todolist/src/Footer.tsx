@@ -11,12 +11,12 @@ interface Todo {
 interface FooterType {
   todos: Todo[];
   Set_Completed: () => void;
-  SetFilterChange: (filter: "all" | "active" | "completed") => void;
+  setFilter: (filter: "All" | "Active" | "Complete") => void;
 }
 
 const Footer = () => {
   const context = useContext(ToDoListContext);
-  const { todos, Set_Completed, SetFilterChange } = context as unknown as FooterType;
+  const { todos, Set_Completed, setFilter } = context as unknown as FooterType;
 
   const activeCount: number = _.filter(todos,(todo) => !todo.completed).length;
 
@@ -24,9 +24,9 @@ const Footer = () => {
     <div className="fotter">
       <span>{activeCount} item left!</span>
       <span>
-        <button onClick={() => SetFilterChange("all")}>All</button>
-        <button onClick={() => SetFilterChange("active")}>Active</button>
-        <button onClick={() => SetFilterChange("completed")}>Completed</button>
+        <button onClick={() => setFilter("All")}>All</button>
+        <button onClick={() => setFilter("Active")}>Active</button>
+        <button onClick={() => setFilter("Complete")}>Completed</button>
       </span>
       <button onClick={Set_Completed}>Clear completed</button>
     </div>

@@ -14,28 +14,16 @@ interface ListType {
   SetTodoChange: (item: Todo) => void;
   SetDelete: (item: Todo) => void;
   filter: "all" | "active" | "completed";
+  setFilter: Todo[];
 }
 
 const ListDetail = () => {
   const context = useContext(ToDoListContext);
-  const { todos, SetTodoChange, SetDelete, filter } = context as unknown as ListType;
-
-  const filteredTodos = _.filter(todos,(todo) => {
-    switch (filter) {
-      case "all":
-        return true;
-      case "active":
-        return !todo.completed;
-      case "completed":
-        return todo.completed;
-      default:
-        return true;
-    }
-  });
+  const { SetTodoChange, SetDelete, setFilter } = context as unknown as  ListType;
 
   return (
     <div className="list">
-      {_.map(filteredTodos, (item, i) => (
+      {_.map(setFilter, (item, i) => (
         <div key={i}>
           <input
           className="checkbox"
